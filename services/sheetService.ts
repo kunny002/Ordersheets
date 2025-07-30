@@ -4,7 +4,7 @@ import type { Order } from '../types';
 const GAS_WEB_APP_URL = 'ここにデプロイしたウェブアプリのURLを貼り付け';
 
 export const submitOrderToGoogleSheet = async (order: Order): Promise<{ success: boolean; message: string }> => {
-  if (!GAS_WEB_APP_URL || GAS_WEB_APP_URL === 'https://script.google.com/macros/s/AKfycbzm5MVjEFSy3Mbc_pBkyO0szAd2reSNyyjBpXzgDns5UUNVKajIXF3wxMpYnB2tOhGK/exec') {
+  if (!GAS_WEB_APP_URL || GAS_WEB_APP_URL === 'https://script.google.com/macros/s/AKfycbxO8ZimRNLZtFqCd5zDHJoNqWvhMSG2m5FwWhBt_yZwtP28uEx_pCBgpaGuFqiQYFzC/exec') {
     console.error("Google Apps ScriptのURLが設定されていません。");
     return { success: false, message: '設定エラー: 送信先URLがありません。' };
   }
