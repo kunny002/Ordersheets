@@ -1,0 +1,5 @@
+{
+  "name": "School Supply Order Form",
+  "description": "A web application to digitize a school supply order form. Users can select items, choose options, and see a running total before submitting their order.",
+  "requestFramePermissions": []
+}

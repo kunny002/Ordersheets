@@ -1,0 +1,91 @@
+
+import { Product, ProductType } from './types';
+
+export const PRODUCTS: Product[] = [
+  { id: '1', number: '1', name: 'さんすうぼっくす(県版)', type: ProductType.SIMPLE, price: 3100 },
+  { id: '2', number: '2', name: 'かる木ちゃん 油粘土セット(ヘラ・ケース付)', type: ProductType.SIMPLE, price: 780 },
+  { id: '3', number: '3', name: 'サクラクレパス(20色太巻)', type: ProductType.SIMPLE, price: 930 },
+  { id: '4', number: '4', name: 'サクラクーピー 15色', type: ProductType.SIMPLE, price: 950 },
+  { 
+    id: '5', 
+    number: '5', 
+    name: '絵の具道具',
+    type: ProductType.GROUPED,
+    description: '※セットにしてあります。',
+    subProducts: [
+        { id: '5a', name: 'サクラえのぐ15色', price: 1690 },
+        { id: '5b', name: '画材バック(筆洗い付き)', price: 1900 },
+        { id: '5c', name: '画筆(特大・大・小)', price: 1200 },
+        { id: '5d', name: 'カラーWパレット', price: 310 },
+    ]
+  },
+  { id: '6', number: '6', name: '国語ノート8マスリーダー1冊 ・ 算数ノート1冊', type: ProductType.SIMPLE, price: 300 },
+  { id: '7', number: '7', name: '整理かご(黄色)', type: ProductType.SIMPLE, price: 420 },
+  { id: '8', number: '8', name: '書き方ペン(2本組)', type: ProductType.SIMPLE, price: 200 },
+  { id: '9', number: '9', name: 'クロッキー帳', type: ProductType.SIMPLE, price: 420 },
+  { id: '10', number: '10', name: '計画帳(たて書き)1冊', type: ProductType.SIMPLE, price: 170 },
+  { id: '11', number: '11', name: '連絡袋(A4)', type: ProductType.SIMPLE, price: 350 },
+  { id: '12', number: '12', name: 'たんけんバック', type: ProductType.SIMPLE, price: 920 },
+  { id: '13', number: '13', name: 'ボンドタッチ', type: ProductType.SIMPLE, price: 170 },
+  { id: '14', number: '14', name: '帽章', type: ProductType.SIMPLE, price: 70 },
+  { id: '15', number: '15', name: 'スティックのり', type: ProductType.SIMPLE, price: 220 },
+  { id: '16', number: '16', name: '名前ペンツイン(油性)', type: ProductType.SIMPLE, price: 150 },
+  { id: '17', number: '17', name: '紅白体操帽子フリー (男女兼用)', type: ProductType.SIMPLE, price: 680 },
+  {
+    id: '18',
+    number: '18',
+    name: '着脱式タレ付紅白体操帽子',
+    description: '※○をつけてください。',
+    type: ProductType.CHOICE,
+    options: [
+      { label: 'M', price: 950 },
+      { label: 'L', price: 950 },
+    ],
+  },
+  { id: '19', number: '19', name: '傘(黄色) 55cm', type: ProductType.SIMPLE, price: 1300 },
+  { id: '20', number: '20', name: '工作はさみ', type: ProductType.SIMPLE, price: 480 },
+  { id: '21', number: '21', name: '鍵盤ハーモニカ(メロディオン)(唄口 立奏・卓奏付)', type: ProductType.SIMPLE, price: 6200 },
+  { id: '22', number: '22', name: '鍵盤ハーモニカ(メロディオン)唄口 立奏用', type: ProductType.SIMPLE, price: 330 },
+  { id: '23', number: '23', name: '鍵盤ハーモニカ(メロディオン)唄口 卓奏用', type: ProductType.SIMPLE, price: 495 },
+  { id: '24', number: '24', name: '粘土板', type: ProductType.SIMPLE, price: 350 },
+  {
+    id: '25',
+    number: '25',
+    name: 'サクラ三角鉛筆 2B(1ダース)',
+    description: '※色に○をつけてください。',
+    type: ProductType.CHOICE,
+    options: [
+      { label: 'ブルー', price: 650 },
+      { label: 'ピンク', price: 650 },
+    ],
+  },
+  {
+    id: '26',
+    number: '26',
+    name: '給食着',
+    description: '※サイズに○をつけてください。',
+    type: ProductType.CHOICE,
+    options: [
+      { label: '120', price: 1970 },
+      { label: '130', price: 1970 },
+      { label: '140', price: 2250 },
+      { label: '150', price: 2250 },
+    ],
+  },
+  { id: '27', number: '27', name: '給食帽子(フリーサイズ)', type: ProductType.SIMPLE, price: 420 },
+  { id: '28', number: '28', name: '給食袋', type: ProductType.SIMPLE, price: 550 },
+  { id: '29', number: '29', name: 'マスク', type: ProductType.SIMPLE, price: 120 },
+  { 
+    id: '30', 
+    number: '30', 
+    name: '黄色い帽子',
+    type: ProductType.GROUPED,
+    description: '※選んでください。',
+    subProducts: [
+        { id: '30a', name: 'キャップ型 (ツバ付)', description: '(S・M・L)', price: 1540 },
+        { id: '30b', name: 'メトロ型 (円盤)', description: '(S・M・L)', price: 1540 },
+    ]
+  },
+  { id: '31', number: '31', name: 'さんすうボックス名前シール', type: ProductType.SIMPLE, price: 470 },
+  { id: '32', number: '32', name: '画板', type: ProductType.SIMPLE, price: 1630 },
+];
